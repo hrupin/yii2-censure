@@ -1,6 +1,8 @@
 <?php
 namespace hrupin\censure\models;
 
+use ReflectionMethod;
+
 /**
  * A class for validating method parameters to allowed types via reflection.
  *
@@ -54,6 +56,7 @@ class ReflectionTypeHint
     );
     #calling the methods of this class only statically!
     private function __construct() {}
+
     public static function isValid()
     {
         if (! assert_options(ASSERT_ACTIVE)) return true;

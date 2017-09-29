@@ -1,11 +1,11 @@
 <?php
-namespace hrupin\base\controllers;
+namespace hrupin\censure\controllers;
 
 use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 
-class CensureController extends Controller
+class ParseController extends Controller
 {
     /**
      * @inheritdoc
@@ -23,14 +23,17 @@ class CensureController extends Controller
     }
 
     /**
-     * Lists all Reviews models.
+     * Lists all Censure action.
      * @return mixed
      */
     public function actionIndex()
     {
-//        $class = Yii::$app->getModule('base')->modelMap['Base'];
-//        $model = Yii::createObject($class::className());
+        $class = Yii::$app->getModule('censure')->modelMap['Censure'];
+        $model = Yii::createObject($class::className());
 
-        return $this->render('index');
+        if(Yii::$app->request->post()){
+            $res = $model::parse(Yii::$app->request->post('text'), '6', '', true, Yii::$app->getModule('censure')->replace);
+            echo $res;
+        }
     }
 }
