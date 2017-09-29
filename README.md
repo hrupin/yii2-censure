@@ -31,3 +31,31 @@ or add
 ```
 
 to the require section of your `composer.json` file.
+
+
+## Configure
+
+in common/config/main.php
+
+```
+'modules' => [
+    'censure' => [
+        'class' => 'hrupin\censure\Module',
+        'replace' => '[цензура]'
+    ]
+]
+```
+
+
+
+
+## Использование
+
+```
+Url::toRoute('/censure/parse/index') -> url for ajax
+```
+
+```
+$res = \hrupin\censure\models\Censure::parse('text', '6', '', true, '[censored]');
+echo $res;
+```
