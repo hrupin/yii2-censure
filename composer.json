@@ -1,0 +1,25 @@
+{
+  "name": "hrupin/yii2-censure",
+  "description": "Censure for YII2",
+  "type": "yii2-extension",
+  "keywords": ["yii2","extension"],
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Hrupin Aleksandr",
+      "email": "hrupin.work@yandex.ru"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "*"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "hrupin\\censure\\": ""
+    }
+  },
+  "extra": {
+    "bootstrap": "hrupin\\censure\\Bootstrap"
+  }
+}
