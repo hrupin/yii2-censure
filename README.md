@@ -11,3 +11,23 @@
 Согласно статье 20.1 КоАП РФ нецензурная брань в общественных местах (интернет — место общественное) расценивается как мелкое хулиганство, за что установлена административная ответственность — наложение штрафа в размере от пятисот до одной тысячи рублей или административный арест на срок до пятнадцати суток.
 
 Project was exported and update to Yii2 from http://code.google.com/p/php-censure
+
+
+Installation
+------------
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+Either run
+
+```
+php composer.phar require --prefer-dist hrupin/yii2-reviews "*"
+```
+
+or add
+
+```
+"hrupin/yii2-reviews": "*"
+```
+
+to the require section of your `composer.json` file.
