@@ -6,7 +6,7 @@ use yii\base\Module as BaseModule;
 
 class Module extends BaseModule
 {
-    const VERSION = '0.0.3';
+    const VERSION = '0.1.0';
 
     public $modelMap = [];
     public $userModel;
