@@ -21,13 +21,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist hrupin/yii2-reviews "*"
+php composer.phar require --prefer-dist hrupin/yii2-censure "*"
 ```
 
 or add
 
 ```
-"hrupin/yii2-reviews": "*"
+"hrupin/yii2-censure": "*"
 ```
 
 to the require section of your `composer.json` file.
