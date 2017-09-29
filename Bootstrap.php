@@ -6,7 +6,7 @@ use yii\i18n\PhpMessageSource;
 use yii\base\BootstrapInterface;
 
 /**
- * Blogs module bootstrap class.
+ * Censure module bootstrap class.
  */
 class Bootstrap implements BootstrapInterface
 {
